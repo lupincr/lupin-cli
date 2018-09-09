@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  bargs:
+    github: crystalrealm/bargs
+    version: 1.0.0
+
