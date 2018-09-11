@@ -3,7 +3,8 @@ require "./lupincli/*"
 require "./lupincli/initializers/*"
 
 module LupinCli
-  VERSION = "0.1.0"
+  VERSION        = "0.1.0"
+  LUPINFILE_PATH = "./lupinfile.cr"
 
   def self.init(args)
     mode = "cr"
@@ -14,13 +15,7 @@ module LupinCli
     case mode
     when "cr"
       CrystalInitializer.new
-    when "md"
-      MarkdownInitializer.new
-    when "yml"
-      YAMLInitializer.new
     end
-
-    puts "Initialization mode: #{mode}"
   end
 
   def self.run(args)
