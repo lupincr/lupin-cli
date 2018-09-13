@@ -1,7 +1,7 @@
 require "spec"
 require "../src/lupincli"
 
-describe Lupin::Cli do
+describe LupinCli do
   it "works" do
     true.should eq(true)
   end
