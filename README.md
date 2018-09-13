@@ -1,27 +1,18 @@
-# lupin-cli
+<p align="center">
+  <img src="https://github.com/molnarmark/lupin/blob/master/assets/logo.png"/>
+  <h2 align="center">All in one Task Runner for Crystal</h2>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/%E2%99%A5-built%20with%20crystal-6D27C2.svg">
+  <img src="https://img.shields.io/github/license/lupincr/lupin.svg">
+  <img src="https://img.shields.io/github/tag/lupincr/lupin.svg?maxAge=360">
+  <img src="https://img.shields.io/circleci/project/github/lupincr/lupin/master.svg">
+  <img src="https://img.shields.io/github/issues-pr/lupincr/lupin.svg">
+  <img src="https://img.shields.io/github/issues/lupincr/lupin.svg">
+</p>
 
-TODO: Write a description here
+# 🐺 Lupin CLI
 
-## Installation
+This repository contains the source code of the Lupin CLI.
 
-TODO: Write installation instructions here
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/lupin-cli/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [your-github-user](https://github.com/your-github-user) Mark Molnar - creator, maintainer
+For documentation regarding use, please check out the [Lupin Documentation](https://github.com/lupincr/lupin/tree/master/docs)

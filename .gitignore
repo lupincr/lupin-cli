@@ -4,3 +4,5 @@
 /.shards/
 *.dwarf
 lupinfile.cr
+update-lupin.sh
+lupin

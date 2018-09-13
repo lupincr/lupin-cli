@@ -4,7 +4,7 @@ require "./lupincli/*"
 require "./lupincli/initializers/*"
 
 module LupinCli
-  VERSION        = "0.1.0"
+  VERSION        = "1.0.0"
   LUPINFILE_PATH = "./lupinfile.cr"
 
   def self.init(args)
@@ -13,11 +13,12 @@ module LupinCli
 
   def self.run(args)
     if args.size == 0
-      puts "Running default task"
+      Process.exec("crystal", args: ["run", "./lib/lupin/src/runners/task_runner.cr"])
     elsif args.size == 1
-      puts "running task #{args[0]}"
+      Process.exec("crystal", args: ["run", "./lib/lupin/src/runners/task_runner.cr", "--", args[0]])
     else
-      puts "Running tasks: #{args.to_s}"
+      args = ["run", "./lib/lupin/src/runners/task_runner.cr", "--"].concat(args)
+      Process.exec("crystal", args: args)
     end
   end
 
@@ -33,6 +34,7 @@ module LupinCli
 
   #{"Thank you for using Lupin!".colorize(:yellow).mode(:bold).to_s}
   "
+
   interface = Bargs::CLI.new
   interface.help = help_message
 
