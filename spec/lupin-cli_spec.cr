@@ -1,8 +1,7 @@
-require "./spec_helper"
+require "spec"
+require "../src/lupincli"
 
 describe Lupin::Cli do
-  # TODO: Write tests
-
   it "works" do
     true.should eq(true)
   end
