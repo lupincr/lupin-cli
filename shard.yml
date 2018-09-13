@@ -13,6 +13,7 @@ dependencies:
     github: crystalrealm/bargs
   epilog:
     github: crystalrealm/epilog
+    version: 1.1.1
 
 crystal: 0.26.0
 
